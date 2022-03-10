@@ -1,3 +1,8 @@
+*** Settings ***
+Documentation       Essa suite testa o site da Amazon
+Test Setup          Abrir o navegador
+Test Teardown       Fechar o navegador              
+
 *** Test Cases ***
 
 CT 01 - Acesso ao menu "Eletrônicos"
