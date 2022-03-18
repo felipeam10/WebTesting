@@ -24,6 +24,9 @@ Acessar a home page do site Amazon.com.br
 Entrar no menu "Eletrônicos"
     Click Element    locator=${MENU_ELETRONICOS}
 
-Verificar se aparece a frase "Eletrônicos e Tecnologia"
-    Wait Until Page Contains    text=${TEXT_HEADER_ELETRONICOS}
-    Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS} 
+Verificar se aparece a frase "${FRASE}"
+    Wait Until Page Contains    text=${FRASE}
+    Wait Until Element Is Visible    locator=${HEADER_ELETRONICOS}
+
+Verificar se o título da página fica "${TITULO}"
+    Title Should Be    title=${TITULO}
