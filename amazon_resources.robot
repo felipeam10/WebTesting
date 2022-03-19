@@ -43,4 +43,4 @@ Clicar no botão de pesquisa
 
 
 Verificar o resultado da pesquisa, se está listando o produto ${PRODUTO_XBOX_SERIE_S}
-    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO_XBOX_SERIE_S}')])[5]
+    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO_XBOX_SERIE_S}')])[5] 
