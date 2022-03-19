@@ -15,6 +15,7 @@ Abrir o navegador
     Maximize Browser Window
 
 Fechar o navegador
+    Capture Page Screenshot
     Close Browser
 
 Acessar a home page do site Amazon.com.br
@@ -33,3 +34,13 @@ Verificar se o título da página fica "${TITULO}"
 
 Verificar se aparece a categoria "${NOME_CATEGORIA}"
     Element Should Be Visible    locator=//a[@aria-label='${NOME_CATEGORIA}']
+
+Digitar o nome de produto "${PRODUTO_XBOX}" no campo de pesquisa
+    Input Text    locator=twotabsearchtextbox    text=${PRODUTO_XBOX}
+
+Clicar no botão de pesquisa
+    Click Button    locator=nav-search-submit-button
+
+
+Verificar o resultado da pesquisa, se está listando o produto ${PRODUTO_XBOX_SERIE_S}
+    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO_XBOX_SERIE_S}')])[5]
